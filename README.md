@@ -1,6 +1,6 @@
 # HTML_CSS Google Website Project
 
-Here is the link(https://daegudude.github.io/the-odin-project/) to my webpage
+Here is the link(https://daegudude.github.io/top-google-project/) to my webpage
 It is not perfect, but the aim of it was not to be
 a perfectionist.
 
