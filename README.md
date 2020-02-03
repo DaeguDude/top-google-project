@@ -8,12 +8,12 @@ a perfectionist.
 ### What I've learned
 
 * How to google
-* Understanding of Margin and Padding, boxmodel perse
+* Understanding of Margin and Padding, boxmodel per se
 * How to use Git properly
 
 
 ### What to improve on next project
 
-* How to google more impatienly(Read question and answer thoroughly)
+* How to google more patienly(Read question and answer thoroughly)
 * Working on one topic at the time(Do not go everywhere)
 * How to finish the project on time
