@@ -1,0 +1,415 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: arial, sans-serif;
+  line-height: 1.3rem;
+}
+
+#header-container {
+  display: flex;
+  flex-direction: column;
+  height: 123px;
+}
+
+#header-container div {
+  text-align: center;
+}
+
+#header-first-section {
+  display: flex;
+  padding-top: 20px;
+  height: 65px;
+}
+
+#header-first-section  div {
+  text-align: center;
+}
+
+#top-google-logo {
+  width: 130px;
+  min-width: 130px;
+  margin-right: 15px;
+  background-image: 
+    url("https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+  /* padding-top:  */
+}
+
+#search-bar {
+  width: 630px;
+  /* flex-basis is also a width */
+  /* For the search-bar i */
+  position: relative;
+}
+
+#search {
+  width: 630px;
+  height: 45px;
+  border-radius: 30px;
+  border: 1px solid rgba(102, 102, 102, 0.3);
+  padding: 15px;
+  font-size: 16px;
+}
+
+#search:focus {
+  outline: none;
+}
+
+#search:hover {
+  box-shadow: 1px 3px 5px rgba(102, 102, 102, 0.3),
+              -1px -2px 5px rgba(102, 102, 102, 0.3);
+}
+
+.fa-microphone {
+  color: #0080ff;
+  position: absolute;
+  top: 32%;
+  left: 88%;
+}
+
+#search-bar .fa-search {
+  color: #0080ff;
+  position: absolute;
+  top: 32%;
+  left: 94%;
+}
+
+
+
+
+/* horizontal offset, vertical offset, blur radius, spread radius, color */
+
+#user-section {
+  width: 130px;
+  margin-left: auto;
+  background-image: url('user-section.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-size: 75%;
+  margin-top: 10px;
+  min-width: 130px;
+}
+
+#header-second-section {
+  display: flex;
+  height: 58px;
+  vertical-align: middle;
+  color: #5f6368;
+  border-bottom: 1px solid rgba(102, 102, 102, 0.3);
+}
+
+#nav-section {
+  margin-left: 160px;
+  width: 630px;
+  min-width: 630px;
+}
+
+#nav-section ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+#nav-section ul a { 
+  text-decoration: none;
+  color: #5f6368;
+  text-align: center;
+  padding: 25px 15px 0px 6px;
+}
+
+#nav-section ul a:hover {
+  color: #0080ff;
+  border-bottom: #0080ff 4px solid;
+}
+
+#nav-section ul a:nth-child(7) {
+  margin-left: 70px;
+}
+
+#nav-section ul a:nth-child(n+7):hover {
+  border-bottom: none;
+}
+
+#safe-search {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  line-height: 100%;
+}
+
+#safe-search span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  font-size: 14px;
+  margin-top: 15px;
+  min-width: 130px;
+}
+
+
+/* Main Starts Here */
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 150px;
+}
+
+
+.flex-item {
+  width: 600px;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+
+
+#result {
+  font-size: 14px;
+  color: #707577;
+  padding: 0 8px;
+}
+
+#main-result {
+  border: 1px solid rgba(102, 102, 102, 0.3);
+  width: 650px;
+  height: 200px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#main-result-paragraph {
+  font-size: 16px;
+}
+
+#main-result cite {
+  padding: 0px;
+  margin-top: 30px;
+}
+
+#main-result .search-link {
+  padding: 0px;
+  display: block;
+  margin-top: 5px;
+}
+
+#freq-question {
+  width: 650px;
+  border: 1px solid rgba(102, 102, 102, 0.3);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-item:nth-child(4) {
+  padding-left: 0px;
+}
+
+
+.question {
+  position: relative;
+  height: 44px;
+  border-bottom: 1px solid rgba(102, 102, 102, 0.3);
+  width: 100%;
+  display: inline-block;
+  padding: 9px 40px 9px 16px;
+}
+
+.arrow-down {
+  position: absolute;
+  left: 600px;
+}
+
+.question:first-child {
+  font-size: 20px;
+  line-height: 1.4rem;
+}
+
+#search-related {
+  height: 220px;
+  width: 650px;
+}
+
+.search-link {
+  font-size: 20px;
+  color: #1a0dab;
+  margin: 0 0 3px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+
+.search-link:hover {
+  text-decoration: underline; 
+}
+
+.search-paragraph {
+  font-size: 14px;
+  color: #3c4043;
+  padding: 5px;
+}
+
+cite {
+  font-size: 14px;
+  color: #3c4043;
+  display: block;
+  padding: 5px;
+}
+
+#sort-down {
+  position: relative;
+  padding-left: 5px;
+  top: -2px;
+}
+
+/* Main bottom */
+#search-related {
+  width: 600px;
+  height: 150px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+#bottom-paragraph {
+  font-size: 20px;
+  padding-bottom: 8px;
+  height: 34px;
+}
+
+#related-result {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#related-result a {
+  font-size: 14px;
+  color: #1a0dab;
+  text-decoration: none;
+  width: 274px;
+  padding-bottom: 5px;
+}
+
+#related-result a:hover {
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+/* Footer stsarts here */
+#footer-container {
+  width: 100%;
+  height: 82px;
+  background-color: #f2f2f2;
+  /* Min-width prevents flex items to overflow.
+  because even if the window shrinks, it wants to
+  keep the minimum width that was given. */
+  min-width: 1000px; 
+}
+
+#f-bar-1 {
+  border-top: 1px solid #e4e4e4;
+  height: 50%;
+  line-height: 40px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+#country {
+  display: flex;
+  flex-direction: row;
+  margin-left: 165px;
+  font-size: 15px;
+  color: #5f6368;
+}
+
+#bar {
+  margin: 15px;
+}
+
+#f-bar-1 span:last-child {
+  margin-left: 3px;
+  display: flex;
+  flex-direction: row;
+}
+
+#f-bar-1 span:last-child a {
+  text-decoration: none;
+  margin: 0 3px;
+  color: #5f6368;
+}
+
+/* Google logo section */
+/* #bottom-google-logo {
+  width: 310px;
+  height: 23px;
+  margin-left: 170px;
+  background-image: url(
+    "google-bottom-image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+} */
+
+#bottom-google-logo-section {
+  width: 310px;
+  height: 57px;
+  margin-bottom: 30px;
+  margin-left: 150px;
+  background-image: url('google-image-bottom.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 110%;
+}
+
+
+
+
+
+#bottom-google-logo-section td a {
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  color: #0080ff;
+}
+
+
+
+
+#f-bar-2 {
+  border-top: 1px solid #e4e4e4;
+  height: 50%;
+  display: flex;
+  line-height: 40px;
+}
+
+#footer-flex-span {
+  display: flex;
+  flex-direction: row;
+  margin-left: 165px;
+}
+
+#footer-flex-span a {
+  padding-right: 27px;
+  font-size: 14px;
+  color: #5f6368;
+  text-decoration: none;
+}
+
